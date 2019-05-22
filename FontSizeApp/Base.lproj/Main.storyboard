@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +13,92 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FontSizeApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FonT SizE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jPx-51-UCi">
+                                <rect key="frame" x="10" y="120" width="75" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Custom FonT" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U4j-c5-1fi">
+                                <rect key="frame" x="109" y="43" width="102" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(: I'm an exemple of font :)" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="px7-Kb-WCl">
+                                <rect key="frame" x="60.5" y="208" width="199" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="7" minimumValue="7" maximumValue="30" translatesAutoresizingMaskIntoConstraints="NO" id="qx5-WR-6A5">
+                                <rect key="frame" x="217" y="115" width="94" height="29"/>
+                                <connections>
+                                    <action selector="ChangedFontSteeper:" destination="BYZ-38-t0r" eventType="valueChanged" id="jCQ-0m-f4o"/>
+                                </connections>
+                            </stepper>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="8000" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yiF-Tx-B9m">
+                                <rect key="frame" x="133" y="120" width="54" height="24"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                                <color key="tintColor" red="0.69191224090000003" green="0.34401980440000002" blue="0.36464812219999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lF7-9P-kmI">
+                                <rect key="frame" x="241" y="445" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="7mr-RT-MzP" kind="show" id="Jkc-aJ-oqG"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="yiF-Tx-B9m" firstAttribute="top" secondItem="jPx-51-UCi" secondAttribute="top" id="1Er-8x-eTJ"/>
+                            <constraint firstItem="px7-Kb-WCl" firstAttribute="top" secondItem="jPx-51-UCi" secondAttribute="top" constant="88" id="2nw-dA-7lZ"/>
+                            <constraint firstItem="qx5-WR-6A5" firstAttribute="leading" secondItem="yiF-Tx-B9m" secondAttribute="trailing" constant="30" id="IhK-8O-5mQ"/>
+                            <constraint firstItem="jPx-51-UCi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="OHW-KC-VUF"/>
+                            <constraint firstItem="qx5-WR-6A5" firstAttribute="top" secondItem="jPx-51-UCi" secondAttribute="top" constant="-5" id="RoC-JJ-9RS"/>
+                            <constraint firstItem="jPx-51-UCi" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="frD-rP-rf7"/>
+                            <constraint firstItem="px7-Kb-WCl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gjP-YA-ati"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qx5-WR-6A5" secondAttribute="trailing" constant="10" id="lIR-JD-FPp"/>
+                            <constraint firstItem="U4j-c5-1fi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pXU-Xx-fq1"/>
+                            <constraint firstItem="yiF-Tx-B9m" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qVb-Pi-Sw7"/>
+                            <constraint firstItem="U4j-c5-1fi" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="23" id="rwB-tp-Uj0"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="ui_ExempleTextFont" destination="px7-Kb-WCl" id="N6E-TL-Q8I"/>
+                        <outlet property="ui_FontLabel" destination="yiF-Tx-B9m" id="pBG-Q8-5dr"/>
+                        <outlet property="ui_SizeFontSteeper" destination="qx5-WR-6A5" id="hS9-6c-2gC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="34.782608695652179" y="14.732142857142856"/>
+        </scene>
+        <!--Next Page View Controller-->
+        <scene sceneID="bLY-R8-oEP">
+            <objects>
+                <viewController id="7mr-RT-MzP" customClass="NextPageViewController" customModule="FontSizeApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ANJ-xp-YXY">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="YCa-04-eL4"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uwW-pX-TRN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1007" y="6"/>
         </scene>
     </scenes>
 </document>
